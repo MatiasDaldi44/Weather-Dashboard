@@ -1,0 +1,51 @@
+#citySearch {
+    margin: 15px;
+}
+
+.searchCard {
+    background-color: lightgray;
+    float: left;
+    padding: 15px;
+    padding-bottom: 100%;
+    columns: 1;
+}
+
+.uvDanger {
+    background-color: red;
+    float: right;
+}
+
+.uvMedium {
+    background-color: orange;
+    float: right;
+}
+
+.uvMild {
+    background-color: yellow;
+    float: right;
+}
+
+.cityUv {
+    float: left;
+}
+
+#firstDay {
+    position: fixed;
+}
+
+.fiveDays {
+    float: left;
+    margin: 15px;
+}
+
+.bottomBlock {
+    height: 100%;
+}
+
+.fiveDaysHeader {
+    margin-left: 2%;
+}
+
+.cityName {
+    margin-top: 3%;
+}

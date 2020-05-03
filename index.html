@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <nav id="header" class="navbar navbar-dark bg-dark">
+        <span class="navbar-text text-white">Weather Dashboard</span>
+    </nav>
+    <aside class="searchCard">
+        <form class="form-inline form-group">
+            <div class="citySearch">
+                <p><strong>Search for a City:</strong></p>
+                <input type="citySearch" class="form-control" id="citySearch">
+                <button type="submit" class="btn btn-primary mb-2">Search</button>
+            </div>
+        </form>
+        <ul class="cityButtons"></ul>
+    </aside>
+    <section class="firstDay">
+        <div class="row">
+            <h2 class="cityName"></h2><img class="firstPic">
+        </div>
+        <p class="cityTemp col-sm col-3"></p>
+        <p class="cityHumidity col-sm col-3"></p>
+        <p class="cityWind col-sm col-3"></p>
+        <p class="cityUv col-2"></p>
+    </section>
+    <section class="bottomBlock">
+        <p><strong class="fiveDaysHeader"></strong></p>
+        <div class="fiveDays row">
+            <div class="secondDay">
+                <p class="secondDate"></p>
+                <img class="secondPic">
+                <p class="secondTemp"></p>
+                <p class="secondHumidity"></p>
+            </div>
+            <div class="thirdDay">
+                <p class="thirdDate"></p>
+                <img class="thirdPic">
+                <p class="thirdTemp"></p>
+                <p class="thirdHumidity"></p>
+            </div>
+            <div class="fourthDay">
+                <p class="fourthDate"></p>
+                <img class="fourthPic">
+                <p class="fourthTemp"></p>
+                <p class="fourthHumidity"></p>
+            </div>
+            <div class="fifthDay ">
+                <p class="fifthDate"></p>
+                <img class="fifthPic">
+                <p class="fifthTemp"></p>
+                <p class="fifthHumidity"></p>
+            </div>
+            <div class="sixthDay">
+                <p class="sixthDate"></p>
+                <img class="sixthPic">
+                <p class="sixthTemp"></p>
+                <p class="sixthHumidity"></p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="java/main.js"></script>
 </body>
 </html>
